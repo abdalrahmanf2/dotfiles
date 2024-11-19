@@ -4,8 +4,8 @@ This repo contains the dotfiles for my hyprland setup
 
 # Gallery
 
-![](https://github.com/boodyf2/dotfiles/blob/main/Pictures/Screenshots/1.png)
-![](https://github.com/boodyf2/dotfiles/blob/main/Pictures/Screenshots/2.png)
+![](https://github.com/boodyf2/dotfiles/blob/trunk/Pictures/Screenshots/1.png)
+![](https://github.com/boodyf2/dotfiles/blob/trunk/Pictures/Screenshots/2.png)
 
 # 📗 Information
 
