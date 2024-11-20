@@ -64,9 +64,19 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias vim=nvim
 alias ls="ls --color"
-alias dots="cd ~/.config"
+alias dots="cd ~/dotfiles/.config"
 alias ..="cd .."
 alias se="sudoedit"
+alias mkdir='mkdir -p -v'
+alias code='/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland'
+
+# Python
+alias py='python3'
+alias venv-activate='source .venv/bin/activate'
+alias venv-create='python3 -m venv .venv'
+alias venv-deactivate='deactivate'
+
+
 
 # Shell integrations
 
