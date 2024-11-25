@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1.75"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="My Toolbar Copy"/>
-  <property name="lastSavePath" value="/home/abdalrahman"/>
-  <property name="lastOpenPath" value="/home/boody/Downloads"/>
+  <property name="lastSavePath" value="/home/abdalrahman/notes"/>
+  <property name="lastOpenPath" value="/home/abdalrahman/notes"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -159,7 +159,9 @@
       <attribute name="tool" type="string" value="hand"/>
     </data>
     <data name="stylus2">
-      <attribute name="tool" type="string" value="hand"/>
+      <attribute name="eraserMode" type="string" value="none"/>
+      <attribute name="size" type="string" value="none"/>
+      <attribute name="tool" type="string" value="eraser"/>
     </data>
     <data name="touch">
       <attribute name="device" type="string" value=""/>
@@ -278,21 +280,21 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="c4a7e7"/>
+      <attribute name="color" type="hex" value="eb6f92"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="BIG"/>
+      <attribute name="size" type="string" value="MEDIUM"/>
     </data>
     <data name="image">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="eb6f92"/>
+      <attribute name="color" type="hex" value="ffa51d2d"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="THIN"/>
+      <attribute name="size" type="string" value="MEDIUM"/>
       <attribute name="style" type="string" value="plain"/>
     </data>
     <data name="playObject">
