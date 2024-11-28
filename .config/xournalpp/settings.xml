@@ -6,7 +6,7 @@
   <property name="pressureMultiplier" value="1.75"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="My Toolbar Copy"/>
-  <property name="lastSavePath" value="/home/abdalrahman/notes"/>
+  <property name="lastSavePath" value="/home/abdalrahman/notes/simu"/>
   <property name="lastOpenPath" value="/home/abdalrahman/notes"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
@@ -49,12 +49,12 @@
   <!--The icon theme, allowed values are "iconsColor", "iconsLucide"-->
   <property name="iconTheme" value="iconsLucide"/>
   <!--Dark/light mode, allowed values are "useSystem", "forceLight", "forceDark"-->
-  <property name="themeVariant" value="forceDark"/>
-  <property name="highlightPosition" value="false"/>
-  <property name="cursorHighlightColor" value="2164260608"/>
+  <property name="themeVariant" value="useSystem"/>
+  <property name="highlightPosition" value="true"/>
+  <property name="cursorHighlightColor" value="3545052761"/>
   <property name="cursorHighlightBorderColor" value="2147483903"/>
-  <property name="cursorHighlightRadius" value="30"/>
-  <property name="cursorHighlightBorderWidth" value="20"/>
+  <property name="cursorHighlightRadius" value="10"/>
+  <property name="cursorHighlightBorderWidth" value="0"/>
   <property name="useStockIcons" value="false"/>
   <property name="disableScrollbarFadeout" value="false"/>
   <property name="disableAudio" value="false"/>
@@ -81,8 +81,8 @@
   <property name="touchDrawing" value="false"/>
   <property name="gtkTouchInertialScrolling" value="true"/>
   <property name="pressureGuessing" value="true"/>
-  <property name="selectionBorderColor" value="4279834905"/>
-  <property name="backgroundColor" value="4279834905"/>
+  <property name="selectionBorderColor" value="4280492342"/>
+  <property name="backgroundColor" value="4279834404"/>
   <property name="selectionMarkerColor" value="4285702095"/>
   <property name="touchZoomStartThreshold" value="0"/>
   <property name="pageRerenderThreshold" value="5"/>
