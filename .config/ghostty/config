@@ -1,0 +1,49 @@
+# Theme
+theme = catppuccin-mocha
+cursor-invert-fg-bg = true
+background-opacity = 0.95
+window-theme = ghostty
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Fonts
+font-family = "JetBrainsMono Nerd Font"
+font-style-bold = true
+font-size = 13
+
+# keybindings
+keybind = clear
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+h=previous_tab
+keybind = ctrl+shift+l=next_tab
+keybind = ctrl+shift+comma=move_tab:-1
+keybind = ctrl+shift+period=move_tab:1
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = super+shift+enter=new_split:auto
+keybind = super+shift+i=inspector:toggle
+keybind = super+shift+m=toggle_split_zoom
+keybind = super+shift+r=reload_config
+keybind = super+shift+s=write_screen_file:open
+keybind = super+shift+w=close_surface
+
+# Window
+gtk-single-instance = true
+gtk-tabs-location = bottom
+gtk-wide-tabs = false
+window-padding-x = 12
+window-padding-y = 16,0
+window-padding-balance = true
+window-decoration = false
+
+# Other
+shell-integration-features = no-cursor,no-sudo,title
+shell-integration = zsh
+mouse-hide-while-typing = true
+window-vsync = false

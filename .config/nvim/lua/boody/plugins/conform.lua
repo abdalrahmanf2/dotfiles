@@ -23,6 +23,7 @@ return {
 				json = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
+				latex = { "latexindent" },
 			},
 
 			format_on_save = {

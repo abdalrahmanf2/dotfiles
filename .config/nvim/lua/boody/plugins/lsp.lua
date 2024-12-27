@@ -20,8 +20,12 @@ return {
 	config = function()
 		local cmp = require("cmp")
 		local cmp_lsp = require("cmp_nvim_lsp")
-		local capabilities =
-			vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_lsp.default_capabilities())
+		local capabilities = vim.tbl_deep_extend(
+			"force",
+			{},
+			vim.lsp.protocol.make_client_capabilities(),
+			cmp_lsp.default_capabilities()
+		)
 
 		require("fidget").setup({})
 		require("mason").setup()
@@ -38,6 +42,7 @@ return {
 				"eslint",
 				"emmet_language_server",
 				"prismals",
+				"texlab",
 			},
 			handlers = {
 				function(server_name) -- default handler (optional)
@@ -76,6 +81,7 @@ return {
 				"prettier",
 				"stylua",
 				"isort",
+				"latexindent",
 			},
 		})
 
