@@ -4,6 +4,7 @@
         "source": "~/.config/fastfetch/frieren.png",
         "type": "kitty-direct",
         "width": 28,
+        "height": 13,
     },
     "display": {
         "separator": " ➜  "
