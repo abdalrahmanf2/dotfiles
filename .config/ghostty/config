@@ -1,17 +1,15 @@
 # Theme
-theme = catppuccin-mocha
+theme = tokyonight
 cursor-invert-fg-bg = true
 background-opacity = 0.95
 window-theme = ghostty
 
 # Cursor
-cursor-color = #f5e0dc
-cursor-text = #1e1e2e
 cursor-style = block
 cursor-style-blink = false
 
 # Fonts
-font-size = 13
+font-size = 12
 freetype-load-flags = hinting
 
 # keybindings
@@ -24,13 +22,14 @@ keybind = super+shift+r=reload_config
 gtk-single-instance = true
 gtk-tabs-location = bottom
 gtk-wide-tabs = false
-window-padding-x = 15
-window-padding-y = 16,0
+window-padding-x = 10
+window-padding-y = 12,0
 window-padding-balance = true
+window-padding-color = background
 window-decoration = false
 
 # Other
-shell-integration-features = no-cursor,no-sudo,title
+shell-integration-features = no-cursor,no-sudo,no-title
 shell-integration = zsh
 mouse-hide-while-typing = true
 # window-vsync = false

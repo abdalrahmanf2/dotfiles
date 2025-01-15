@@ -20,4 +20,6 @@ set scroll-step 100
 set zoom-min 10
 set guioptions ""
 
-include catppuccin-mocha
+set recolor "true"
+
+include tokyonight

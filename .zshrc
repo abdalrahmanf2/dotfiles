@@ -81,12 +81,9 @@ alias venv-deactivate='deactivate'
 # Shell integrations
 
 # FZF
-export FZF_DEFAULT_OPTS=" \
-    --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-    --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
-    --color=selected-bg:#45475a \
-    --multi"
 eval "$(fzf --zsh)"
 
 # Oh My Posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
+
+export PATH=$PATH:/home/abdalrahman/.spicetify
