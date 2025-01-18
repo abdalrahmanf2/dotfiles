@@ -5,10 +5,6 @@
 #
 ## Rofi   : Power Menu
 #
-## Available Styles
-#
-## style-1   style-2   style-3   style-4   style-5
-## style-6   style-7   style-8   style-9   style-10
 
 # Current Theme
 dir="$HOME/.config/rofi/powermenu"
@@ -16,7 +12,6 @@ theme='style'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=`hostname`
 
 # Options
 shutdown=''

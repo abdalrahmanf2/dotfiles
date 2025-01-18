@@ -5,7 +5,7 @@ frame_width=1
 horizontal_padding=10
 max_icon_size=64
 padding=10
-transparency = 25
+transparency = 15
 
 [urgency_critical]
 background="#292e42"

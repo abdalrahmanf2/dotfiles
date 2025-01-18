@@ -22,3 +22,10 @@ Xcursor.size: 24
 *color13: #bb9af7
 *color14: #7dcfff
 *color15: #c0caf5
+
+! Font Tweaks
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb

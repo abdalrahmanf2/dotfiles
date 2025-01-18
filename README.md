@@ -1,43 +1,35 @@
 # My Dotfiles
 
-This repo contains the dotfiles for my hyprland setup
+This branch contains the dotfiles for my i3wm setup
 
 # Gallery
 
-![](https://github.com/boodyf2/dotfiles/blob/trunk/Pictures/Screenshots/1.png)
-![](https://github.com/boodyf2/dotfiles/blob/trunk/Pictures/Screenshots/2.png)
+![](https://github.com/boodyf2/dotfiles/blob/trunk/Pictures/Screenshots/3.jpeg)
 
 # 📗 Information
 
--   **OS :** Arch Linux
--   **WM:** Hyprland
--   **Shell:** ZSH
--   **GTK Theme:** [Rose Pine GTK Theme](https://github.com/rose-pine/gtk)
--   **ColorScheme:** [Catppuccin](https://github.com/Catppuccin/catppuccin)
--   **Fonts:** JetBrainsMono Nerd Font
--   **Cursor Theme:** [macOs](https://github.com/ful1e5/apple_cursor)
--   **Icon Theme:** [Rose Pine Icon Theme](https://github.com/rose-pine/gtk)
--   **Launcher/PowerMenu:** Modified Rofi Themes Taken From Here: [Adi1090x Rofi Themes](https://github.com/adi1090x/rofi)
--   **Bar:** [HyprPanel](https://github.com/Jas-SinghFSU/HyprPanel)
--   **Spotify Theming:** Custom Spicetify Theme + Beautiful Lyrics Extension
--   **LockScreen:** Hyprlock
--   **SDDM Theme:** [Catppuccin SDDM Theme](https://github.com/catppuccin/sddm)
--   **Idle Daemon:** Hypridle
--   **Terminal:** Kitty
--   **Wallpaper Daemon:** Hyprpaper
+- **OS :** Arch Linux
+- **WM:** [I3](https://github.com/i3/i3)
+- **Display Manager:** [ly](https://github.com/fairyglade/ly)
+- **Shell:** ZSH
+- **ColorScheme:** Tokyo Night
+- **GTK Theme:** [Tokyo Night GTK Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme)
+- **Fonts:** JetBrainsMono Nerd Font
+- **Cursor Theme:** [macOs](https://github.com/ful1e5/apple_cursor)
+- **Icon Theme:** [Tokyo Night Icon Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme)
+- **Launcher/PowerMenu:** Modified Rofi Themes Taken From Here: [Adi1090x Rofi Themes](https://github.com/adi1090x/rofi)
+- **Bar:** [Polybar](https://github.com/polybar/polybar)
+- **Spotify Theming:** [Custom Spicetify Tokyo Night Theme](https://github.com/evening-hs/Spotify-Tokyo-Night-Theme) + Beautiful Lyrics Extension
+- **LockScreen:** [Betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
+- **Terminal:** Ghostty
+- **Wallpaper Daemon:** [feh](https://github.com/derf/feh)
 
 ## Requirments
 
 Ensure you have the following installed on your system
 
--   git
--   stow
-
-### Note For SDDM
-
-YOU NEED TO INSTALL THESE FOR IT TO WORK WITH HYPRLAND `layer-shell-qt layer-shell-qt5`
-
-and ofcourse the stuff above mentioned in the information section with all of its deps
+- git
+- stow
 
 ### Installation
 
@@ -51,5 +43,5 @@ $ cd dotfiles
 and then use GNU stow to create symlinks
 
 ```bash
-$ stow .
+$ stow . --dotfiles
 ```

@@ -1,11 +1,12 @@
 # ------ Startup Executes ------ #
 exec_always --no-startup-id picom
 exec_always --no-startup-id ~/dotfiles/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-scale ~/dotfiles/wallpapers/dark-rose.png
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/how-she-looks-at-me.png
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id flameshot&
 exec_always --no-startup-id ghostty --gtk-single-instance=true --initial-window=false
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id lxpolkit
+exec_always --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen --nofork
 
 # ------ Confiuration ------ #
 # Set variables
@@ -76,7 +77,7 @@ bindsym $mod+semicolon split h
 bindsym $mod+v split v
 
 # toggle tiling / floating
-bindsym $mod+Shift+f floating toggle
+bindsym $mod+s floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+Shift+space focus mode_toggle
