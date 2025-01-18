@@ -4,7 +4,7 @@ This branch contains the dotfiles for my i3wm setup
 
 # Gallery
 
-![](https://github.com/boodyf2/dotfiles/blob/trunk/Pictures/Screenshots/3.jpeg)
+![](https://github.com/boodyf2/dotfiles/blob/i3/Pictures/Screenshots/3.jpeg)
 
 # 📗 Information
 
