@@ -49,7 +49,7 @@
   <!--The icon theme, allowed values are "iconsColor", "iconsLucide"-->
   <property name="iconTheme" value="iconsLucide"/>
   <!--Dark/light mode, allowed values are "useSystem", "forceLight", "forceDark"-->
-  <property name="themeVariant" value="useSystem"/>
+  <property name="themeVariant" value="forceDark"/>
   <property name="highlightPosition" value="true"/>
   <property name="cursorHighlightColor" value="3545052761"/>
   <property name="cursorHighlightBorderColor" value="2147483903"/>
@@ -81,8 +81,8 @@
   <property name="touchDrawing" value="false"/>
   <property name="gtkTouchInertialScrolling" value="true"/>
   <property name="pressureGuessing" value="true"/>
-  <property name="selectionBorderColor" value="4280492342"/>
-  <property name="backgroundColor" value="4279834404"/>
+  <property name="selectionBorderColor" value="4279900966"/>
+  <property name="backgroundColor" value="4280559675"/>
   <property name="selectionMarkerColor" value="4285702095"/>
   <property name="touchZoomStartThreshold" value="0"/>
   <property name="pageRerenderThreshold" value="5"/>
@@ -92,7 +92,7 @@
   <property name="preloadPagesAfter" value="5"/>
   <property name="eagerPageCleanup" value="true"/>
   <!--Config for new pages-->
-  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=true&#10;size=595.275591x841.889764&#10;backgroundType=graph&#10;backgroundColor=#191724&#10;"/>
+  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=true&#10;size=595.275591x841.889764&#10;backgroundType=graph&#10;backgroundColor=#1a1b26&#10;"/>
   <property name="sizeUnit" value="cm"/>
   <property name="audioFolder" value=""/>
   <property name="audioInputDevice" value="-1"/>
@@ -240,14 +240,14 @@
     </data>
   </data>
   <data name="lastUsedPageBgColor">
-    <attribute name="color00" type="hex" value="fffaf4ed"/>
-    <attribute name="color01" type="hex" value="ff191724"/>
-    <attribute name="color02" type="hex" value="ff242438"/>
-    <attribute name="color03" type="hex" value="ff191919"/>
-    <attribute name="color04" type="hex" value="ff282828"/>
-    <attribute name="color05" type="hex" value="ffdcf6c1"/>
-    <attribute name="color06" type="hex" value="ffffffff"/>
-    <attribute name="color07" type="hex" value="ffffffff"/>
+    <attribute name="color00" type="hex" value="ff24283b"/>
+    <attribute name="color01" type="hex" value="ff1a1b26"/>
+    <attribute name="color02" type="hex" value="fffaf4ed"/>
+    <attribute name="color03" type="hex" value="ff191724"/>
+    <attribute name="color04" type="hex" value="ff242438"/>
+    <attribute name="color05" type="hex" value="ff191919"/>
+    <attribute name="color06" type="hex" value="ff282828"/>
+    <attribute name="color07" type="hex" value="ffdcf6c1"/>
     <attribute name="color08" type="hex" value="ffffffff"/>
     <attribute name="count" type="int" value="9"/>
   </data>
@@ -290,11 +290,11 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="31748f"/>
+      <attribute name="color" type="hex" value="c0caf5"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="MEDIUM"/>
+      <attribute name="size" type="string" value="THIN"/>
       <attribute name="style" type="string" value="plain"/>
     </data>
     <data name="playObject">

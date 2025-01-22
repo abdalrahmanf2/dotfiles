@@ -6,6 +6,7 @@ exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id flameshot&
 exec_always --no-startup-id ghostty --gtk-single-instance=true --initial-window=false
 exec --no-startup-id lxpolkit
+exec --no-startup-id systemctl --user start opentabletdriver
 exec_always --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen --nofork
 
 # ------ Confiuration ------ #
