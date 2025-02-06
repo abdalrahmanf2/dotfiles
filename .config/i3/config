@@ -1,13 +1,14 @@
 # ------ Startup Executes ------ #
 exec_always --no-startup-id picom
 exec_always --no-startup-id ~/dotfiles/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/how-she-looks-at-me.png
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/brunette-girl.png
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id flameshot&
 exec_always --no-startup-id ghostty --gtk-single-instance=true --initial-window=false
-exec --no-startup-id lxpolkit
-exec --no-startup-id systemctl --user start opentabletdriver
+exec_always --no-startup-id libinput-gestures-setup start
 exec_always --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen --nofork
+exec --no-startup-id systemctl --user start thermald
+exec --no-startup-id lxpolkit
 
 # ------ Confiuration ------ #
 # Set variables
@@ -34,10 +35,22 @@ bindsym $mod+Return exec $term
 # rofi
 bindsym $mod+space exec --no-startup-id ~/dotfiles/.config/rofi/launcher/launcher.sh
 bindsym $mod+Shift+p exec --no-startup-id ~/dotfiles/.config/rofi/powermenu/powermenu.sh
+bindsym $mod+Shift+b exec --no-startup-id ~/dotfiles/.config/rofi/bin/bluetooth.sh
+bindsym $mod+Shift+w exec --no-startup-id ~/dotfiles/.config/rofi/bin/wifi.sh
 
 #screenshots
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 bindsym Print exec --no-startup-id flameshot gui
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10 # decrease screen brightness
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # I3 Related
 bindsym $mod+w kill

@@ -1,5 +1,8 @@
 Xcursor.theme: macOS
-Xcursor.size: 24
+Xcursor.size: 32
+
+! Dpi Scaling
+Xft.dpi: 120
 
 ! TokyoNight colors for Xresources
 *background: #1a1b26
