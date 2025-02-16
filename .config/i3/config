@@ -1,7 +1,7 @@
 # ------ Startup Executes ------ #
 exec_always --no-startup-id picom
 exec_always --no-startup-id ~/dotfiles/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/how-she-looks-at-me.png
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/frieren.png
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id flameshot&
 exec_always --no-startup-id ghostty --gtk-single-instance=true --initial-window=false
@@ -19,9 +19,9 @@ font pango:JetBrainsMono Nerd Font 10
 
 # Borders
 # Also removes all title bars
-for_window [class="^.*"] border pixel 1
-default_border pixel 1
-default_floating_border pixel 1
+for_window [class="^.*"] border pixel 2
+default_border pixel 2
+default_floating_border pixel 2
 
 client.focused           #9aa5ce #364A82 #c0caf5 #9aa5ce   #9aa5ce
 client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
@@ -153,7 +153,9 @@ bindsym $mod+r mode "resize"
 # ------ Window Properties ------ #
 assign [class="zen-browser"] → number 3
 assign [class="discord"] → number 4
+assign [class="vesktopn"] → number 4
 assign [class="Spotify"] → number 5
 # Some programs can be stubborn since they open a splash window before opening
 for_window [class="discord"] move to workspace number 4
+for_window [class="vesktop"] move to workspace number 4
 for_window [class="Spotify"] move to workspace number 5
