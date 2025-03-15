@@ -1,7 +1,7 @@
 # ------ Startup Executes ------ #
 exec_always --no-startup-id picom
 exec_always --no-startup-id ~/dotfiles/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/train.png
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/blue-sad.png
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id flameshot&
 exec_always --no-startup-id ghostty --gtk-single-instance=true --initial-window=false
@@ -25,8 +25,8 @@ default_border pixel 1
 default_floating_border pixel 1
 
 client.focused           #9aa5ce #364A82 #c0caf5 #9aa5ce   #9aa5ce
-client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
-client.unfocused         #16161d #16161d #c0caf5 #16161d   #16161d
+client.focused_inactive  #414868 #414868 #c0caf5 #414868   #414868
+client.unfocused         #414868 #414868 #c0caf5 #414868   #414868
 
 # ------ Keybind ------ #
 # terminal
