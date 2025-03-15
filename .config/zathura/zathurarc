@@ -22,4 +22,4 @@ set guioptions ""
 
 set recolor "true"
 
-include tokyonight
+include tokyonight-storm

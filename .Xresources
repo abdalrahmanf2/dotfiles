@@ -4,11 +4,19 @@ Xcursor.size: 32
 ! Dpi Scaling
 Xft.dpi: 120
 
+! Font Tweaks
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
 ! TokyoNight colors for Xresources
-*background: #1a1b26
+
+*background: #24283b
 *foreground: #c0caf5
 
-*color0: #15161e
+*color0: #1d202f
 *color1: #f7768e
 *color2: #9ece6a
 *color3: #e0af68
@@ -26,9 +34,3 @@ Xft.dpi: 120
 *color14: #7dcfff
 *color15: #c0caf5
 
-! Font Tweaks
-Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintslight
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb

@@ -1,7 +1,7 @@
 # Theme
-theme = tokyonight
+theme = tokyonight-storm
 cursor-invert-fg-bg = true
-background-opacity = 0.97
+background-opacity = 0.95
 window-theme = ghostty
 
 # Cursor
@@ -9,7 +9,7 @@ cursor-style = block
 cursor-style-blink = false
 
 # Fonts
-font-size = 12
+font-size = 14
 freetype-load-flags = hinting
 
 # keybindings
