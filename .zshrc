@@ -68,7 +68,6 @@ alias dots="cd ~/dotfiles/.config"
 alias ..="cd .."
 alias se="sudoedit"
 alias mkdir='mkdir -p -v'
-alias code='/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland'
 
 # Python
 alias py='python3'
@@ -87,3 +86,6 @@ eval "$(fzf --zsh)"
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
 
 export PATH=$PATH:/home/abdalrahman/.spicetify
+
+# bun completions
+[ -s "/home/abdalrahman/.bin/_bun" ] && source "/home/abdalrahman/.bin/_bun"

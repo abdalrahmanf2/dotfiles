@@ -6,7 +6,7 @@
   <property name="pressureMultiplier" value="1.75"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="My Toolbar Copy"/>
-  <property name="lastSavePath" value="/home/abdalrahman/notes/simu"/>
+  <property name="lastSavePath" value="/home/abdalrahman/Downloads"/>
   <property name="lastOpenPath" value="/home/abdalrahman/notes"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
@@ -14,8 +14,8 @@
   <property name="zoomStep" value="10"/>
   <property name="zoomStepScroll" value="2"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1245"/>
-  <property name="mainWndHeight" value="1022"/>
+  <property name="mainWndWidth" value="956"/>
+  <property name="mainWndHeight" value="1048"/>
   <property name="maximized" value="true"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
@@ -80,7 +80,7 @@
   <property name="strokeRecognizerMinSize" value="40"/>
   <property name="touchDrawing" value="false"/>
   <property name="gtkTouchInertialScrolling" value="true"/>
-  <property name="pressureGuessing" value="true"/>
+  <property name="pressureGuessing" value="false"/>
   <property name="selectionBorderColor" value="4279900966"/>
   <property name="backgroundColor" value="4280559675"/>
   <property name="selectionMarkerColor" value="4285702095"/>
@@ -109,7 +109,7 @@
   <property name="doActionOnStrokeFiltered" value="false"/>
   <property name="trySelectOnStrokeFiltered" value="false"/>
   <property name="snapRecognizedShapesEnabled" value="false"/>
-  <property name="restoreLineWidthEnabled" value="false"/>
+  <property name="restoreLineWidthEnabled" value="true"/>
   <property name="numIgnoredStylusEvents" value="2"/>
   <property name="inputSystemTPCButton" value="false"/>
   <property name="inputSystemDrawOutsideWindow" value="true"/>
@@ -139,7 +139,7 @@
     <data name="default">
       <attribute name="color" type="hex" value="ff000000"/>
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="medium"/>
+      <attribute name="size" type="string" value="veryThin"/>
       <attribute name="tool" type="string" value="pen"/>
     </data>
     <data name="eraser">
@@ -290,11 +290,11 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="c0caf5"/>
+      <attribute name="color" type="hex" value="ff0000"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="THIN"/>
+      <attribute name="size" type="string" value="BIG"/>
       <attribute name="style" type="string" value="plain"/>
     </data>
     <data name="playObject">
