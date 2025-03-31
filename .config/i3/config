@@ -1,7 +1,7 @@
 # ------ Startup Executes ------ #
 exec_always --no-startup-id picom
 exec_always --no-startup-id ~/dotfiles/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/omgomg.jpg
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/1.png
 exec_always --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id flameshot&
 exec_always --no-startup-id ghostty --gtk-single-instance=true --initial-window=false
