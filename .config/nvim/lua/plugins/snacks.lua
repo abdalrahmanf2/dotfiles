@@ -58,41 +58,55 @@ return {
 			desc = "Notification History",
 		},
 
-		-- find
+		-- Picker
 		{
-			"<leader>fb",
+			"<leader>pb",
 			function()
 				Snacks.picker.buffers()
 			end,
 			desc = "Buffers",
 		},
 		{
-			"<leader>fc",
+			"<leader>pc",
 			function()
 				Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
 			end,
 			desc = "Find Config File",
 		},
 		{
-			"<leader>ff",
+			"<leader>pf",
 			function()
 				Snacks.picker.files()
 			end,
 			desc = "Find Files",
 		},
 		{
-			"<leader>fp",
+			"<leader>ps",
+			function()
+				Snacks.picker.grep()
+			end,
+			desc = "Grep",
+		},
+		{
+			"<leader>pp",
 			function()
 				Snacks.picker.projects()
 			end,
 			desc = "Projects",
 		},
 		{
-			"<leader>fr",
+			"<leader>pr",
 			function()
 				Snacks.picker.recent()
 			end,
 			desc = "Recent",
+		},
+		{
+			"<leader>pk",
+			function()
+				Snacks.picker.keymaps()
+			end,
+			desc = "Keymaps",
 		},
 
 		-- git
@@ -160,13 +174,6 @@ return {
 				Snacks.picker.grep_buffers()
 			end,
 			desc = "Grep Open Buffers",
-		},
-		{
-			"<leader>sg",
-			function()
-				Snacks.picker.grep()
-			end,
-			desc = "Grep",
 		},
 		{
 			"<leader>sw",

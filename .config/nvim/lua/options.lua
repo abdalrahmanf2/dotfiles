@@ -2,9 +2,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- nerd font support
-vim.g.have_nerd_font = false
-
 -- options
 local o = vim.opt
 
@@ -20,10 +17,24 @@ o.softtabstop = 2
 o.shiftwidth = 2
 o.expandtab = true
 o.smartindent = true
-o.wrap = true
+o.autoindent = true
+o.wrap = false
+
+-- Enable folding ( setup in nvim-ufo )
+vim.o.foldenable = true -- Enable folding by default
+vim.o.foldmethod = "manual" -- Default fold method (change as needed)
+vim.o.foldlevel = 99 -- Open most folds by default
+vim.o.foldcolumn = "0"
+
+--split windows
+vim.opt.splitright = true --split vertical window to the right
+vim.opt.splitbelow = true --split horizontal window to the bottom
 
 -- show sign column by default
 o.signcolumn = "yes"
+
+-- gets rid of line with white spaces
+vim.g.editorconfig = true
 
 -- undo
 o.undodir = os.getenv("HOME") .. "/.vim/undodir"
