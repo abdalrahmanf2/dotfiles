@@ -41,7 +41,7 @@ return {
 						settings = {
 							Lua = {
 								diagnostics = {
-									globals = { "vim", "capabilities" },
+									globals = { "vim", "capabilities", "Snacks" },
 								},
 							},
 						},
@@ -98,11 +98,14 @@ return {
 		})
 
 		vim.diagnostic.config({
-			virtual_text = true,
 			float = true,
 			underline = true,
 			update_in_insert = false,
 			severity_sort = true,
+			virtual_text = {
+				spacing = 4,
+				prefix = "●",
+			},
 			signs = {
 				text = {
 					[vim.diagnostic.severity.ERROR] = "✘",
