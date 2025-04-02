@@ -75,17 +75,28 @@ alias venv-activate='source .venv/bin/activate'
 alias venv-create='python3 -m venv .venv'
 alias venv-deactivate='deactivate'
 
-
-
 # Shell integrations
 
 # FZF
 eval "$(fzf --zsh)"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#363a4f,spinner:#f4dbd6,hl:#ed8796 \
+--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
+--color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
+--color=selected-bg:#494d64 \
+--color=border:#363a4f,label:#cad3f5"
 
-# Oh My Posh
+# oh my posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
 
 export PATH=$PATH:/home/abdalrahman/.spicetify
 
 # bun completions
 [ -s "/home/abdalrahman/.bin/_bun" ] && source "/home/abdalrahman/.bin/_bun"
+
+# envs
+export PATH=/home/abdalrahman/.local/bin:$PATH
+export EDITOR=nvim
+export BUN_INSTALL="$HOME/.bin"
+export PATH=$BUN_INSTALL/bin:$PATH
+export MANPAGER="nvim +Man!"

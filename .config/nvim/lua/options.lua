@@ -20,7 +20,7 @@ o.smartindent = true
 o.autoindent = true
 o.wrap = false
 
--- Enable folding ( setup in nvim-ufo )
+-- enable folding ( setup in nvim-ufo )
 vim.o.foldenable = true -- Enable folding by default
 vim.o.foldmethod = "manual" -- Default fold method (change as needed)
 vim.o.foldlevel = 99 -- Open most folds by default
