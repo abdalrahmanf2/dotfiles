@@ -1,5 +1,8 @@
 return {
 	"folke/noice.nvim",
+	dependencies = {
+		"MunifTanjim/nui.nvim",
+	},
 	event = "VeryLazy",
 	config = function()
 		require("noice").setup({
@@ -41,7 +44,4 @@ return {
 			},
 		})
 	end,
-	dependencies = {
-		"MunifTanjim/nui.nvim",
-	},
 }
