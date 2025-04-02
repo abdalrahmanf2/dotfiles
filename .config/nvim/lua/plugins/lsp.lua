@@ -1,11 +1,11 @@
 return {
 	"neovim/nvim-lspconfig",
-	dependencies({
+	dependencies = {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		"saghen/blink.cmp",
-	}),
+	},
 
 	config = function()
 		local autocmd = vim.api.nvim_create_autocmd
