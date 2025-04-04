@@ -51,11 +51,6 @@ return {
 		"echasnovski/mini.surround",
 		event = { "BufReadPre", "BufNewFile" },
 		opts = {
-			-- Add custom surroundings to be used on top of builtin ones. For more
-			-- information with examples, see `:h MiniSurround.config`.
-			custom_surroundings = nil,
-
-			-- Duration (in ms) of highlight when calling `MiniSurround.highlight()`
 			highlight_duration = 300,
 
 			-- Module mappings. Use `''` (empty string) to disable one.

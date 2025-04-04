@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-fields
 return {
 	"folke/noice.nvim",
 	dependencies = {
@@ -35,9 +36,7 @@ return {
 					enabled = true,
 					view = nil,
 					opts = {
-						border = {
-							style = { "╒", "═", "╕", "│", "╛", "═", "╘", "│" },
-						},
+						border = "rounded",
 						position = { row = 2, col = 2 },
 					},
 				},
