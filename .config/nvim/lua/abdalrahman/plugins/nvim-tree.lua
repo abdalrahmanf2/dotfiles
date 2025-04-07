@@ -23,6 +23,11 @@ return {
 					},
 				},
 			},
+			git = {
+				enable = true,
+				ignore = false,
+				timeout = 500,
+			},
 		})
 
 		-- snacks lsp rename integration ( updates the files path in project )

@@ -11,7 +11,7 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Source/Load Catppuccin syntax highlighting
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+# source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 
 # Add in zsh plugins
