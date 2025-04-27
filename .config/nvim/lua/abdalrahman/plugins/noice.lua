@@ -34,6 +34,7 @@ return {
 			lsp = {
 				hover = {
 					enabled = true,
+					silent = true,
 					view = nil,
 					opts = {
 						border = "rounded",
