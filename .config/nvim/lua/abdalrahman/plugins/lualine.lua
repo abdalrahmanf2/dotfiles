@@ -1,70 +1,62 @@
 return {
 	"nvim-lualine/lualine.nvim",
-  commit = "1517caa",
+	commit = "1517caa",
 	dependencies = { "nvim-tree/nvim-web-devicons", "letieu/harpoon-lualine" },
 
 	config = function()
-		---@param style? string
-		function GetTheme(style)
-			local colors, config = require("tokyonight.colors").setup({
-				style = style,
-			})
+		--- Get lualine theme colors from kanagawa.nvim
+		local function GetTheme()
+			-- Correctly get the palette from the kanagawa colors module
+			local colors = require("kanagawa.colors").setup()
+			local palette = colors.palette
 
-			local hl = {}
-
-			hl.normal = {
-				a = { bg = colors.blue, fg = colors.black },
-				b = { bg = colors.fg_gutter, fg = colors.blue },
-				c = { fg = colors.fg_sidebar },
+			-- Define the lualine theme using the kanagawa palette
+			local lualine_theme = {
+				normal = {
+					a = { bg = palette.crystalBlue, fg = palette.sumiInk0, gui = "bold" },
+					b = { bg = palette.sumiInk1, fg = palette.fujiWhite }, -- Changed background
+					c = { fg = palette.fujiWhite },
+				},
+				insert = {
+					a = { bg = palette.springGreen, fg = palette.sumiInk0, gui = "bold" },
+					b = { bg = palette.sumiInk1, fg = palette.springGreen }, -- Changed background
+				},
+				command = {
+					a = { bg = palette.roninYellow, fg = palette.sumiInk0, gui = "bold" },
+					b = { bg = palette.sumiInk1, fg = palette.roninYellow }, -- Changed background
+				},
+				visual = {
+					a = { bg = palette.oniViolet, fg = palette.sumiInk0, gui = "bold" },
+					b = { bg = palette.sumiInk1, fg = palette.oniViolet }, -- Changed background
+				},
+				replace = {
+					a = { bg = palette.waveRed, fg = palette.sumiInk0, gui = "bold" },
+					b = { bg = palette.sumiInk1, fg = palette.waveRed }, -- Changed background
+				},
+				terminal = {
+					a = { bg = palette.autumnGreen, fg = palette.sumiInk0, gui = "bold" },
+					b = { bg = palette.sumiInk1, fg = palette.autumnGreen }, -- Changed background
+				},
+				inactive = {
+					a = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "bold" },
+					b = { bg = palette.sumiInk1, fg = palette.sumiInk6 },
+					c = { fg = palette.fujiWhite },
+				},
 			}
 
-			hl.insert = {
-				a = { bg = colors.green, fg = colors.black },
-				b = { bg = colors.fg_gutter, fg = colors.green },
-			}
-
-			hl.command = {
-				a = { bg = colors.yellow, fg = colors.black },
-				b = { bg = colors.fg_gutter, fg = colors.yellow },
-			}
-
-			hl.visual = {
-				a = { bg = colors.magenta, fg = colors.black },
-				b = { bg = colors.fg_gutter, fg = colors.magenta },
-			}
-
-			hl.replace = {
-				a = { bg = colors.red, fg = colors.black },
-				b = { bg = colors.fg_gutter, fg = colors.red },
-			}
-
-			hl.terminal = {
-				a = { bg = colors.green1, fg = colors.black },
-				b = { bg = colors.fg_gutter, fg = colors.green1 },
-			}
-
-			hl.inactive = {
-				a = { bg = colors.bg_statusline, fg = colors.blue },
-				b = { bg = colors.bg_statusline, fg = colors.fg_gutter, gui = "bold" },
-				c = { fg = colors.fg_gutter },
-			}
-
-			if config.lualine_bold then
-				for _, mode in pairs(hl) do
-					mode.a.gui = "bold"
-				end
-			end
-			return hl
+			return lualine_theme
 		end
 
 		vim.o.laststatus = vim.g.lualine_laststatus
 		require("lualine").setup({
 			options = {
-				theme = GetTheme("storm"),
+				theme = GetTheme(), -- Use the new Kanagawa theme
 				component_separators = "|",
 				section_separators = { left = "", right = "" },
 				globalstatus = vim.o.laststatus == 3,
-				disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard" } },
+				disabled_filetypes = {
+					statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard" },
+				},
 			},
 
 			sections = {

@@ -129,6 +129,20 @@ return {
 
 			-- git
 			{
+				"<leader>lg",
+				function()
+					Snacks.lazygit()
+				end,
+				desc = "Lazygit",
+			},
+			{
+				"<leader>gl",
+				function()
+					Snacks.lazygit.log()
+				end,
+				desc = "Lazygit Logs",
+			},
+			{
 				"<leader>gb",
 				function()
 					Snacks.picker.git_branches()
@@ -313,13 +327,6 @@ return {
 				end,
 				desc = "Git Browse",
 				mode = { "n", "v" },
-			},
-			{
-				"<leader>gg",
-				function()
-					Snacks.lazygit()
-				end,
-				desc = "Lazygit",
 			},
 			{
 				"<leader>un",

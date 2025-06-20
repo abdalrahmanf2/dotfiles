@@ -10,6 +10,7 @@ o.fillchars = { eob = " " }
 
 -- enable relative line numbers
 o.relativenumber = true
+o.number = true
 
 -- tabs and indentation
 o.tabstop = 2
@@ -47,9 +48,9 @@ o.mouse = "a"
 o.showmode = false
 
 -- sync OS and Neovim clipboards
-vim.schedule(function()
-	o.clipboard = "unnamedplus"
-end)
+-- vim.schedule(function()
+-- 	o.clipboard = "unnamedplus"
+-- end)
 
 -- enable break indent
 o.breakindent = true

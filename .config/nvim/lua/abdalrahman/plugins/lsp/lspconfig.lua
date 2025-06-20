@@ -55,6 +55,30 @@ return {
 
 				opts.desc = "Restart LSP"
 				keymap("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+				opts.desc = "Format Imports"
+				keymap(
+					"n",
+					"<leader>tso",
+					"<cmd>lua vim.lsp.buf.code_action({ apply = true, context = { only = { 'source.organizeImports' }, diagnostics = {}, }, })<cr>",
+					opts
+				) -- format imports
+
+				opts.desc = "Add Missing Imports"
+				keymap(
+					"n",
+					"<leader>tsa",
+					"<cmd>lua vim.lsp.buf.code_action({ apply = true, context = { only = { 'source.addMissingImports.ts' }, diagnostics = {}, }, })<cr>",
+					opts
+				) -- add missing imports
+
+				opts.desc = "Remove Unused Imports"
+				keymap(
+					"n",
+					"<leader>tsr",
+					"<cmd>lua vim.lsp.buf.code_action({ apply = true, context = { only = { 'source.removeUnused.ts' }, diagnostics = {}, }, })<cr>",
+					opts
+				) -- remove unused imports
 			end,
 		})
 
@@ -65,48 +89,107 @@ return {
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		vim.diagnostic.config({ signs })
 
-		mason_lspconfig.setup_handlers({
-			-- default handler for installed servers
-			function(server_name)
-				lspconfig[server_name].setup({
-					capabilities = capabilities,
-				})
-			end,
-
-			["emmet_ls"] = function()
-				-- configure emmet language server
-				lspconfig["emmet_ls"].setup({
-					capabilities = capabilities,
-					filetypes = {
-						"html",
-						"typescriptreact",
-						"javascriptreact",
-						"css",
-						"sass",
-						"scss",
-						"less",
-						"svelte",
+		-- Config lsp servers here
+		-- lua_ls
+		lspconfig.lua_ls.setup({
+			capabilities = capabilities,
+			settings = {
+				Lua = {
+					diagnostics = {
+						globals = { "vim" },
 					},
-				})
-			end,
-
-			["lua_ls"] = function()
-				-- configure lua server (with special settings)
-				lspconfig["lua_ls"].setup({
-					capabilities = capabilities,
-					settings = {
-						Lua = {
-							-- make the language server recognize "vim" global
-							diagnostics = {
-								globals = { "vim" },
-							},
-							completion = {
-								callSnippet = "Replace",
-							},
+					completion = {
+						callSnippet = "Replace",
+					},
+					workspace = {
+						library = {
+							[vim.fn.expand("$VIMRUNTIME/lua")] = true,
+							[vim.fn.stdpath("config") .. "/lua"] = true,
 						},
 					},
-				})
-			end,
+				},
+			},
+		})
+
+		-- emmet_ls
+		lspconfig.emmet_ls.setup({
+			capabilities = capabilities,
+			filetypes = {
+				"html",
+				"typescriptreact",
+				"javascriptreact",
+				"css",
+				"sass",
+				"scss",
+				"less",
+				"svelte",
+			},
+		})
+
+		-- emmet_language_server
+		lspconfig.emmet_language_server.setup({
+			capabilities = capabilities,
+			filetypes = {
+				"css",
+				"eruby",
+				"html",
+				"javascript",
+				"javascriptreact",
+				"less",
+				"sass",
+				"scss",
+				"pug",
+				"typescriptreact",
+			},
+			init_options = {
+				includeLanguages = {},
+				excludeLanguages = {},
+				extensionsPath = {},
+				preferences = {},
+				showAbbreviationSuggestions = true,
+				showExpandedAbbreviation = "always",
+				showSuggestionsAsSnippets = false,
+				syntaxProfiles = {},
+				variables = {},
+			},
+		})
+
+		lspconfig.vtsls.setup({
+			filetypes = {
+				"javascript",
+				"javascriptreact",
+				"javascript.jsx",
+				"typescript",
+				"typescriptreact",
+				"typescript.tsx",
+			},
+			settings = {
+				complete_function_calls = true,
+				vtsls = {
+					enableMoveToFileCodeAction = true,
+					autoUseWorkspaceTsdk = true,
+					experimental = {
+						maxInlayHintLength = 30,
+						completion = {
+							enableServerSideFuzzyMatch = true,
+						},
+					},
+				},
+				typescript = {
+					updateImportsOnFileMove = { enabled = "always" },
+					suggest = {
+						completeFunctionCalls = true,
+					},
+					inlayHints = {
+						enumMemberValues = { enabled = true },
+						functionLikeReturnTypes = { enabled = true },
+						parameterNames = { enabled = "literals" },
+						parameterTypes = { enabled = true },
+						propertyDeclarationTypes = { enabled = true },
+						variableTypes = { enabled = false },
+					},
+				},
+			},
 		})
 	end,
 }

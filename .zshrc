@@ -87,7 +87,11 @@ export FZF_DEFAULT_OPTS=" \
 --color=border:#363a4f,label:#cad3f5"
 
 # oh my posh
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
+# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
+
+# starship
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 export PATH=$PATH:/home/abdalrahman/.spicetify
 

@@ -1,13 +1,18 @@
-@define-color background #1f2335;
+/* Color definitions from SamuraiVim Palette */
+@define-color background #1f1f28; /* sumiInk1 */
+@define-color foreground #dcd7ba; /* fujiWhite */
 
-@define-color black #15161e;
-@define-color red #f7768e;
-@define-color green #9ece6a;
-@define-color orange #e0af68;
-@define-color blue #7aa2f7;
-@define-color mauve #bb9af7;
-@define-color sky #7dcfff;
-@define-color foreground #a9b1d6;
+@define-color black #16161d; /* sumiInk0 */
+@define-color red #e46876; /* waveRed */
+@define-color green #98bb6c; /* springGreen */
+@define-color yellow #e6c384; /* carpYellow (was orange) */
+@define-color blue #7e9cd8; /* crystalBlue */
+@define-color violet #957fb8; /* oniViolet (was mauve) */
+@define-color cyan #7fb4ca; /* springBlue (was sky) */
+
+/* Additional colors for specific states */
+@define-color autumnRed #c34043; /* For power button */
+@define-color fujiGray #727169; /* For disconnected/inactive states */
 
 * {
   font-family:
@@ -19,7 +24,7 @@
 
 window#waybar {
   background-color: transparent;
-  color: @sapphire;
+  color: @blue; /* Mapped from @sapphire */
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -27,15 +32,6 @@ window#waybar {
 window#waybar.hidden {
   opacity: 0.2;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
   background-color: #3f3f3f;
@@ -47,9 +43,7 @@ window#waybar.chromium {
 }
 
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
   border: none;
   border-radius: 0;
 }
@@ -61,40 +55,40 @@ button {
 #workspaces button {
   all: unset;
   padding: 0px 5px;
-  color: alpha(@foreground, .9);
-  transition: all .2s ease;
+  color: alpha(@foreground, 0.9);
+  transition: all 0.2s ease;
 }
 
 #workspaces button:hover {
   color: @red;
   border: none;
-  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease;
 }
 
 #workspaces button.active {
-  color: @sky;
+  color: @cyan; /* Mapped from @sky */
   border: none;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
 #workspaces button.empty {
   color: alpha(@foreground, 0.5);
   border: none;
-  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
 }
 
 #workspaces button.empty:hover {
   color: alpha(@red, 0.8);
   border: none;
-  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease;
 }
 
 #workspaces button.empty.active {
-  color: @overlay2;
+  color: @fujiGray; /* Mapped from @overlay2 */
   border: none;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
 #image {
@@ -129,13 +123,12 @@ button {
   margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, reduce left margin */
-.modules-left>widget:first-child>#workspaces {
+.modules-left > widget:first-child > #workspaces {
   margin-left: 2px;
 }
 
 #pulseaudio {
-  color: @mauve;
+  color: @violet; /* Mapped from @mauve */
   padding: 0 10px;
 }
 
@@ -153,7 +146,7 @@ button {
 }
 
 #network.disconnected {
-  color: @surface2;
+  color: @fujiGray; /* Mapped from @surface2 */
 }
 
 #battery {
@@ -165,15 +158,15 @@ button {
 }
 
 #custom-power {
-  color: @maroon;
+  color: @autumnRed; /* Mapped from @maroon */
   margin-right: 5px;
 }
 
-#keyboard-state>label {
+#keyboard-state > label {
   padding: 0 5px;
 }
 
-#keyboard-state>label.locked {
+#keyboard-state > label.locked {
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -214,5 +207,3 @@ button {
   color: @green;
   padding-right: 10px;
 }
-
-/* vim: ft=sass */

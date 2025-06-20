@@ -21,6 +21,7 @@ return {
 		})
 
 		mason_lspconfig.setup({
+			automatic_enable = false,
 			automatic_installation = true,
 			ensure_installed = {
 				"ts_ls",
@@ -31,6 +32,9 @@ return {
 				"emmet_ls",
 				"prismals",
 				"pyright",
+				"vtsls",
+				"emmet_language_server",
+				"emmet_ls",
 			},
 		})
 

@@ -81,8 +81,8 @@
   <property name="touchDrawing" value="false"/>
   <property name="gtkTouchInertialScrolling" value="true"/>
   <property name="pressureGuessing" value="false"/>
-  <property name="selectionBorderColor" value="4279900966"/>
-  <property name="backgroundColor" value="4280559675"/>
+  <property name="selectionBorderColor" value="4279834905"/>
+  <property name="backgroundColor" value="4279834905"/>
   <property name="selectionMarkerColor" value="4285702095"/>
   <property name="touchZoomStartThreshold" value="0"/>
   <property name="pageRerenderThreshold" value="5"/>
@@ -92,7 +92,7 @@
   <property name="preloadPagesAfter" value="5"/>
   <property name="eagerPageCleanup" value="true"/>
   <!--Config for new pages-->
-  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=true&#10;size=595.275591x841.889764&#10;backgroundType=graph&#10;backgroundColor=#1a1b26&#10;"/>
+  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=true&#10;size=595.275591x841.889764&#10;backgroundType=graph&#10;backgroundColor=#191919&#10;"/>
   <property name="sizeUnit" value="cm"/>
   <property name="audioFolder" value=""/>
   <property name="audioInputDevice" value="-1"/>
@@ -284,7 +284,7 @@
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="MEDIUM"/>
+      <attribute name="size" type="string" value="BIG"/>
     </data>
     <data name="image">
       <attribute name="drawingType" type="string" value="default"/>
@@ -294,7 +294,7 @@
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="BIG"/>
+      <attribute name="size" type="string" value="MEDIUM"/>
       <attribute name="style" type="string" value="plain"/>
     </data>
     <data name="playObject">
