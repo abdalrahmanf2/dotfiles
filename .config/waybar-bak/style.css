@@ -1,0 +1,209 @@
+/* Color definitions from SamuraiVim Palette */
+@define-color background #1f1f28; /* sumiInk1 */
+@define-color foreground #dcd7ba; /* fujiWhite */
+
+@define-color black #16161d; /* sumiInk0 */
+@define-color red #e46876; /* waveRed */
+@define-color green #98bb6c; /* springGreen */
+@define-color yellow #e6c384; /* carpYellow (was orange) */
+@define-color blue #7e9cd8; /* crystalBlue */
+@define-color violet #957fb8; /* oniViolet (was mauve) */
+@define-color cyan #7fb4ca; /* springBlue (was sky) */
+
+/* Additional colors for specific states */
+@define-color autumnRed #c34043; /* For power button */
+@define-color fujiGray #727169; /* For disconnected/inactive states */
+
+* {
+  font-family:
+    GeistMono Nerd Font,
+    Symbols Nerd Font;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: @blue; /* Mapped from @sapphire */
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+window#waybar.termite {
+  background-color: #3f3f3f;
+}
+
+window#waybar.chromium {
+  background-color: #000000;
+  border: none;
+}
+
+button {
+  box-shadow: inset 0 -3px transparent;
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces {
+  padding: 0px 5px;
+}
+
+#workspaces button {
+  all: unset;
+  padding: 0px 5px;
+  color: alpha(@foreground, 0.9);
+  transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+  color: @red;
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+  color: @cyan; /* Mapped from @sky */
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#workspaces button.empty {
+  color: alpha(@foreground, 0.5);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.empty:hover {
+  color: alpha(@red, 0.8);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+#workspaces button.empty.active {
+  color: @fujiGray; /* Mapped from @overlay2 */
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#image {
+  margin: 4px 0 4px 10px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#language,
+#network,
+#wireplumber,
+#custom-pacman,
+#custom-power,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+  padding: 0 6px;
+  color: @foreground;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+
+#window,
+#workspaces {
+  margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 2px;
+}
+
+#pulseaudio {
+  color: @violet; /* Mapped from @mauve */
+  padding: 0 10px;
+}
+
+#tray {
+  padding: 0 10px;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+#network {
+  color: @blue;
+  padding: 0 15px;
+}
+
+#network.disconnected {
+  color: @fujiGray; /* Mapped from @surface2 */
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#custom-power {
+  color: @autumnRed; /* Mapped from @maroon */
+  margin-right: 5px;
+}
+
+#keyboard-state > label {
+  padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+  background-color: transparent;
+}
+
+#power-profiles-daemon {
+  margin-right: 8px;
+}
+
+.modules-left {
+  background-color: @background;
+  border-radius: 10px;
+  padding-right: 10px;
+  margin: 5px 0 0 10px;
+}
+
+.modules-center {
+  background-color: @background;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+
+.modules-right {
+  background-color: @background;
+  border-radius: 10px;
+  padding: 0 10px 0 0;
+  margin: 5px 10px 0 0;
+}
+
+#custom-spotify {
+  color: @green;
+  padding-right: 10px;
+}

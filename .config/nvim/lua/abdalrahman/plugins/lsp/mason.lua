@@ -21,10 +21,15 @@ return {
 		})
 
 		mason_lspconfig.setup({
-			automatic_enable = false,
+			automatic_enable = {
+				exclude = {
+					"ts_ls",
+				},
+			},
 			automatic_installation = true,
 			ensure_installed = {
 				"ts_ls",
+				"ltex",
 				"html",
 				"cssls",
 				"tailwindcss",
@@ -35,6 +40,8 @@ return {
 				"vtsls",
 				"emmet_language_server",
 				"emmet_ls",
+				"jsonls",
+				"gopls",
 			},
 		})
 
@@ -45,7 +52,7 @@ return {
 				"stylua",
 				"isort",
 				"pylint",
-				"eslint_d",
+				{ "eslint_d", version = "13.1.2" },
 			},
 		})
 	end,

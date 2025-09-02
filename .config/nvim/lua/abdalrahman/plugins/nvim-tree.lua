@@ -10,6 +10,7 @@ return {
 		nvimtree.setup({
 			view = {
 				side = "right",
+				width = 36,
 			},
 			renderer = {
 				full_name = false,
@@ -27,6 +28,11 @@ return {
 				enable = true,
 				ignore = false,
 				timeout = 500,
+			},
+
+			update_focused_file = {
+				enable = true,
+				update_root = true,
 			},
 		})
 

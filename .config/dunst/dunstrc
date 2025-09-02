@@ -10,20 +10,17 @@ max_icon_size=64
 padding=10
 transparency = 15
 
-# TokyoNight colors for dunst
-# For more configuration options see https://github.com/dunst-project/dunst/blob/master/dunstrc
-
 [urgency_low]
-    background = "#16161e"
-    foreground = "#c0caf5"
-    frame_color = "#292e42"
+    background = "#161616"
+    foreground = "#F2F4F8"
+    frame_color = "#242424"
 
 [urgency_normal]
-    background = "#1a1b26"
-    foreground = "#c0caf5"
-    frame_color = "#292e42"
+    background = "#161616"
+    foreground = "#F2F4F8"
+    frame_color = "#242424"
 
 [urgency_critical]
-    background = "#292e42"
-    foreground = "#db4b4b"
-    frame_color = "#db4b4b"
+    background = "#252525"
+    foreground = "#EE5396"
+    frame_color = "#EE5396"

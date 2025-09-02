@@ -6,8 +6,7 @@ return {
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 	},
 	config = function()
-		local lspconfig = require("lspconfig")
-		local mason_lspconfig = require("mason-lspconfig")
+		-- local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
 		local keymap = vim.keymap.set
@@ -87,11 +86,17 @@ return {
 
 		-- Change the Diagnostic symbols in the sign column
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-		vim.diagnostic.config({ signs })
+		vim.diagnostic.config({
+			signs = { text = signs },
+			virtual_text = true,
+			underline = true,
+			-- underline_severity = { "Error", "Warn", "Hint", "Info" },
+			update_in_insert = false,
+		})
 
 		-- Config lsp servers here
 		-- lua_ls
-		lspconfig.lua_ls.setup({
+		vim.lsp.config["lua_ls"] = {
 			capabilities = capabilities,
 			settings = {
 				Lua = {
@@ -109,25 +114,10 @@ return {
 					},
 				},
 			},
-		})
-
-		-- emmet_ls
-		lspconfig.emmet_ls.setup({
-			capabilities = capabilities,
-			filetypes = {
-				"html",
-				"typescriptreact",
-				"javascriptreact",
-				"css",
-				"sass",
-				"scss",
-				"less",
-				"svelte",
-			},
-		})
+		}
 
 		-- emmet_language_server
-		lspconfig.emmet_language_server.setup({
+		vim.lsp.config["emmet_language_server"] = {
 			capabilities = capabilities,
 			filetypes = {
 				"css",
@@ -152,9 +142,9 @@ return {
 				syntaxProfiles = {},
 				variables = {},
 			},
-		})
+		}
 
-		lspconfig.vtsls.setup({
+		vim.lsp.config["vtsls"] = {
 			filetypes = {
 				"javascript",
 				"javascriptreact",
@@ -190,6 +180,6 @@ return {
 					},
 				},
 			},
-		})
+		}
 	end,
 }

@@ -75,16 +75,19 @@ alias venv-activate='source .venv/bin/activate'
 alias venv-create='python3 -m venv .venv'
 alias venv-deactivate='deactivate'
 
+# Zed
+alias zed='env -u WAYLAND_DISPLAY zeditor'
+
 # Shell integrations
 
 # FZF
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#363a4f,spinner:#f4dbd6,hl:#ed8796 \
---color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
---color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
---color=selected-bg:#494d64 \
---color=border:#363a4f,label:#cad3f5"
+--color=bg+:#252525,spinner:#F2F4F8,hl:#EE5396 \
+--color=fg:#F2F4F8,header:#EE5396,info:#BE95FF,pointer:#F2F4F8 \
+--color=marker:#78A9FF,fg+:#F2F4F8,prompt:#BE95FF,hl+:#EE5396 \
+--color=selected-bg:#353535 \
+--color=border:#252525,label:#F2F4F8"
 
 # oh my posh
 # eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
@@ -99,8 +102,37 @@ export PATH=$PATH:/home/abdalrahman/.spicetify
 [ -s "/home/abdalrahman/.bin/_bun" ] && source "/home/abdalrahman/.bin/_bun"
 
 # envs
-export PATH=/home/abdalrahman/.local/bin:$PATH
+export PATH="/home/abdalrahman/.local/bin:/home/abdalrahman/.local/share/gem/ruby/3.4.0/bin:$PATH"
+
+
 export EDITOR=nvim
 export BUN_INSTALL="$HOME/.bin"
 export PATH=$BUN_INSTALL/bin:$PATH
 export MANPAGER="nvim +Man!"
+
+eval "$(~/.local/bin/mise activate)"
+
+# nvm
+# . /usr/share/nvm/init-nvm.sh
+eval "$(~/.local/bin/mise activate zsh)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+
+# pnpm
+export PNPM_HOME="/home/abdalrahman/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Android sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORM_PLUGIN_PATH="/usr/share/licenses/qt5-wayland"
+export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1

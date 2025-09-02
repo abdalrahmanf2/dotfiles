@@ -1,10 +1,16 @@
 {
   "layer": "top",
-  "height": 37,
+  "height": 32,
   "spacing": 5,
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "custom/spotify"],
-  "modules-center": ["clock"],
+  "modules-left": [
+    "user",
+    "hyprland/workspaces",
+    "custom/spotify"
+  ],
+  "modules-center": [
+    "clock"
+  ],
   "modules-right": [
     "pulseaudio",
     "hyprland/language",
@@ -13,30 +19,36 @@
   "hyprland/window": {
     "separate-outputs": false
   },
-"hyprland/workspaces": {
-            "format": "{icon}",
-            "format-icons": {
-                "active": "",
-                "default": "",
-                "empty": ""
-            },
-            "persistent-workspaces": {
-                "*": [ 1,2,3,4,5 ]
-            }
-        },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "empty": ""
+    },
+    "persistent-workspaces": {
+      "*": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
   "hyprland/language": {
     "format": "  {}",
     "format-en": "En",
     "format-ar": "Ar",
-    "keyboard-name": "at-translated-set-2-keyboard"
+    "keyboard-name": "by-tech-gaming-keyboard"
   },
   "user": {
-    "format": "  adxthya | ({work_H}hr {work_M} mins ↑)",
+    "format": "  abdlrhmn0x7e | ({work_H}hr {work_M} mins ↑)",
     "interval": 60,
     "height": 23,
     "width": 23,
     "icon": true,
-    "avatar": "/home/adxthya/.config/waybar/pfp.jpeg",
+    "avatar": "/home/abdalrahman/dotfiles/Pictures/bored.jpg"
   },
   "tray": {
     "spacing": 10
@@ -50,7 +62,19 @@
       "warning": 40
     },
     "format": "{capacity}% {icon}",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
     "format-charging": "󰂄",
     "format-warning": "󰂃",
     "tooltip-format": "{capacity}%"
@@ -68,12 +92,16 @@
     "format": "{icon}  {volume}",
     "format-muted": "shhh..",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     },
     "tooltip-format": "{volume}% volume",
     "on-click": "$HOME/.config/waybar/scripts/volume.sh --toggle",
     "on-scroll-up": "$HOME/.config/waybar/scripts/volume.sh --inc",
-    "on-scroll-down": "$HOME/.config/waybar/scripts/volume.sh --dec",
+    "on-scroll-down": "$HOME/.config/waybar/scripts/volume.sh --dec"
   },
   "custom/power": {
     "format": "󰐥",
@@ -94,16 +122,14 @@
     "path": "/home/adxthya/.config/waybar/nix.svg",
     "size": 20,
     "interval": 5,
-    "on-click": "brave https://search.nixos.org/packages",
+    "on-click": "brave https://search.nixos.org/packages"
   },
   "custom/spotify": {
-        "interval": 1,
-        "return-type": "json",
-        "exec": "~/.config/waybar/scripts/music.sh",
-        "on-click": "playerctl play-pause",
-        "escape": true
-    },
+    "interval": 1,
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/music.sh",
+    "on-click": "playerctl play-pause",
+    "escape": true
+  }
 }
-}
-
 // vim: ft=jsonc

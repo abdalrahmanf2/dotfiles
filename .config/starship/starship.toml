@@ -5,18 +5,54 @@ command_timeout = 1000
 add_newline = false 
 
 format = """
- ➜\
+ [➜](green)\
 $directory\
-${custom.giturl}\
 $git_branch\
 $git_state\
-$line_break\
-$character 
+$line_break \
+$character
 """
 
 right_format = """"""
 
-palette = "kanagawa"
+palette = "carbonfox"
+
+[palettes.rose-pine]
+overlay = '#26233a'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ebbcba'
+pine = '#31748f'
+foam = '#9ccfd8'
+iris = '#c4a7e7'
+
+[palettes.tokyonight]
+rosewater = "#bb9af7" # tokyoNight magenta (soft)
+flamingo = "#f7768e" # tokyoNight red
+pink = "#bb9af7" # tokyoNight magenta
+mauve = "#9d7cd8" # tokyoNight purple
+red = "#f7768e" # tokyoNight red
+maroon = "#ff9e64" # tokyoNight orange (used as strong warm)
+peach = "#ff9e64" # tokyoNight orange
+yellow = "#e0af68" # tokyoNight yellow
+green = "#9ece6a" # tokyoNight green
+teal = "#7dcfff" # tokyoNight cyan
+sky = "#7aa2f7" # tokyoNight blue
+sapphire = "#7aa2f7" # tokyoNight blue (alternate)
+blue = "#7aa2f7" # tokyoNight blue
+lavender = "#c0caf5" # tokyoNight foreground-light / soft violet
+text = "#c0caf5" # tokyoNight foreground
+subtext1 = "#a9b1d6" # tokyoNight fg-muted
+subtext0 = "#8aa0d9" # tokyoNight fg-dim / blueish
+overlay2 = "#565f89" # tokyoNight comment / muted
+overlay1 = "#2f3442" # tokyoNight background darker
+overlay0 = "#1f2335" # tokyoNight background
+surface2 = "#16161E" # tokyoNight bg (darker)
+surface1 = "#1a1b26" # tokyoNight bg (base)
+surface0 = "#0f1722" # tokyoNight extra dark (for contrast)
+base = "#1a1b26" # tokyoNight base background
+mantle = "#16161E" # tokyoNight mantle / near-black
+crust = "#0f1722" # tokyoNight crust / deepest
 
 [palettes.kanagawa]
 rosewater = "#D27E99" # sakuraPink
@@ -74,6 +110,35 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 
+[palettes.carbonfox]
+rosewater = "#e4e4e5" 
+flamingo = "#ff7eb6" 
+pink = "#ee5396"    
+mauve = "#be95ff"  
+red = "#ee5396"   
+maroon = "#ff7eb6"
+peach = "#08bdba" 
+yellow = "#3ddbd9"
+green = "#25be6a"
+teal = "#08bdba"
+sky = "#33b1ff"
+sapphire = "#78a9ff"
+blue = "#78a9ff"
+lavender = "#be95ff"
+
+text = "#f2f4f8"
+subtext1 = "#b6b8bb"
+subtext0 = "#7b7c7e"
+overlay2 = "#484848"
+overlay1 = "#353535"
+overlay0 = "#252525"
+surface2 = "#252525"
+surface1 = "#252525"
+surface0 = "#252525"
+base = "#161616"
+mantle = "#161616"
+crust = "#161616"
+
 [os.symbols]
 Windows = "󰍲"
 Ubuntu = "󰕈"
@@ -95,17 +160,17 @@ Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
-[username]
-#show_always = true
-#style_user = "bg:surface0 fg:text"
-#style_root = "bg:surface0 fg:text"
-#format = '[ $user ]($style)'
+# [username]
+# show_always = true
+# style_user = "bg:surface0 fg:text"
+# style_root = "bg:surface0 fg:text"
+# format = '[ $user ]($style)'
 
 [directory]
-style = "sapphire"
+style = "sky"
 format = "[ $path ]($style)"
-#truncation_length = 4
-#truncation_symbol = "…/"
+# truncation_length = 4
+# truncation_symbol = "…/"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -137,13 +202,14 @@ fi
 echo "$GIT_REMOTE_SYMBOL "
 """
 when = 'git rev-parse --is-inside-work-tree 2> /dev/null'
-format = "at $output"
+format = "[at $output](gold)"
+
 
 [git_branch]
-symbol = "[](black) "
+symbol = "[](surface0) "
 # format =  ' [$symbol$branch(:$remote_branch)]($style)[]'
-style = "fg:lavender bg:black"
-format =  '  on [$symbol$branch]($style)[](black)'
+style = "fg:mauve bg:surface0"
+format =  '[$symbol$branch]($style)[](surface0)'
 
 [git_status]
 format = ' [($all_status$ahead_behind )]($style)'
@@ -197,7 +263,7 @@ format = '[ $symbol( $context) ]($style)'
 [time]
 disabled = true
 time_format = "%R"
-style = "bg:peach"
+style = "bg:overlay"
 format = '[[  $time ](fg:mantle bg:foam)]($style)'
 
 [line_break]
@@ -205,10 +271,10 @@ disabled = true
 
 [character]
 disabled = true 
-success_symbol = '[𝘹](bold fg:green)'
+success_symbol = '[𝘹](bold fg:sapphire)'
 error_symbol = '[𝘹](bold fg:red)'
-vimcmd_symbol = '[](bold fg:creen)'
+vimcmd_symbol = '[](bold fg:overlay)'
 vimcmd_replace_one_symbol = '[](bold fg:purple)'
 vimcmd_replace_symbol = '[](bold fg:purple)'
-vimcmd_visual_symbol = '[](bold fg:lavender)'
+vimcmd_visual_symbol = '[](bold fg:foam)'
 

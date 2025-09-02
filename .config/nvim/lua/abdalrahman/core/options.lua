@@ -5,6 +5,11 @@ vim.g.maplocalleader = " "
 -- options
 local o = vim.opt
 
+o.guicursor = ""
+
+-- auto read files when they change
+o.autoread = true
+
 -- remove "~" sign from the end of buffers
 o.fillchars = { eob = " " }
 
@@ -48,9 +53,9 @@ o.mouse = "a"
 o.showmode = false
 
 -- sync OS and Neovim clipboards
--- vim.schedule(function()
--- 	o.clipboard = "unnamedplus"
--- end)
+vim.schedule(function()
+	o.clipboard = "unnamedplus"
+end)
 
 -- enable break indent
 o.breakindent = true
