@@ -110,11 +110,6 @@ export BUN_INSTALL="$HOME/.bin"
 export PATH=$BUN_INSTALL/bin:$PATH
 export MANPAGER="nvim +Man!"
 
-eval "$(~/.local/bin/mise activate)"
-
-# nvm
-# . /usr/share/nvm/init-nvm.sh
-eval "$(~/.local/bin/mise activate zsh)"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
