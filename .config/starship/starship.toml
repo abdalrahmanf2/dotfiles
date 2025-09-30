@@ -15,16 +15,65 @@ $character
 
 right_format = """"""
 
-palette = "carbonfox"
+palette = "catppuccin_latte"
+
+[palettes.catppuccin_latte]
+rosewater = "#dc8a78"
+flamingo  = "#dd7878"
+pink      = "#ea76cb"
+mauve     = "#8839ef"
+red       = "#d20f39"
+maroon    = "#e64553"
+peach     = "#fe640b"
+yellow    = "#df8e1d"
+green     = "#40a02b"
+teal      = "#179299"
+sky       = "#04a5e5"
+sapphire  = "#209fb5"
+blue      = "#1e66f5"
+lavender  = "#7287fd"
+
+text      = "#4c4f69"
+subtext1  = "#5c5f77"
+subtext0  = "#6c6f85"
+overlay2  = "#7c7f93"
+overlay1  = "#8c8fa1"
+overlay0  = "#9ca0b0"
+surface2  = "#acb0be"
+surface1  = "#bcc0cc"
+surface0  = "#ccd0da"
+base      = "#eff1f5"
+mantle    = "#e6e9ef"
+crust     = "#dce0e8"
 
 [palettes.rose-pine]
-overlay = '#26233a'
-love = '#eb6f92'
-gold = '#f6c177'
-rose = '#ebbcba'
-pine = '#31748f'
-foam = '#9ccfd8'
-iris = '#c4a7e7'
+rosewater = "#f2d5cf"
+flamingo  = "#eebebe"
+pink      = "#f4b8e4"
+mauve     = "#ca9ee6"
+red       = "#e78284"
+maroon    = "#ea999c"
+peach     = "#ef9f76"
+yellow    = "#e5c890"
+green     = "#a6d189"
+teal      = "#81c8be"
+sky       = "#99d1db"
+sapphire  = "#85c1dc"
+blue      = "#8caaee"
+lavender  = "#babbf1"
+
+text      = "#e0def4"
+subtext1  = "#c6c3dc"
+subtext0  = "#908caa"
+overlay2  = "#6e6a86"
+overlay1  = "#575268"
+overlay0  = "#433c59"
+surface2  = "#373354"
+surface1  = "#2a273f"
+surface0  = "#1f1d2e"
+base      = "#191724"
+mantle    = "#1f1d2e"
+crust     = "#161320"
 
 [palettes.tokyonight]
 rosewater = "#bb9af7" # tokyoNight magenta (soft)

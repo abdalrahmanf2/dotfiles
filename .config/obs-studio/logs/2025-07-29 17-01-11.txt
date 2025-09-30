@@ -1,0 +1,153 @@
+17:01:11.018: [Safe Mode] Unclean shutdown detected!
+17:01:12.012: [Safe Mode] User elected to launch normally.
+17:01:12.013: Platform: Wayland
+17:01:12.013: CPU Name: 12th Gen Intel(R) Core(TM) i5-12400F
+17:01:12.013: CPU Speed: 1000.683MHz
+17:01:12.015: Physical Cores: 6, Logical Cores: 12
+17:01:12.015: Physical Memory: 15798MB Total, 10217MB Free
+17:01:12.015: Kernel Version: Linux 6.15.6-arch1-1
+17:01:12.015: Distribution: "Arch Linux" Unknown
+17:01:12.015: Desktop Environment: Hyprland (Hyprland)
+17:01:12.015: Session Type: wayland
+17:01:12.020: Qt Version: 6.9.1 (runtime), 6.9.1 (compiled)
+17:01:12.020: Portable mode: false
+17:01:12.041: OBS 31.0.4 (linux)
+17:01:12.041: ---------------------------------
+17:01:12.041: ---------------------------------
+17:01:12.041: audio settings reset:
+17:01:12.041: 	samples per sec: 48000
+17:01:12.041: 	speakers:        2
+17:01:12.041: 	max buffering:   960 milliseconds
+17:01:12.041: 	buffering type:  dynamically increasing
+17:01:12.042: ---------------------------------
+17:01:12.042: Initializing OpenGL...
+17:01:12.042: Using EGL/Wayland
+17:01:12.076: Initialized EGL 1.5
+17:01:12.121: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3060/PCIe/SSE2
+17:01:12.121: OpenGL loaded successfully, version 3.3.0 NVIDIA 575.64.03, shading language 3.30 NVIDIA via Cg compiler
+17:01:12.140: ---------------------------------
+17:01:12.140: video settings reset:
+17:01:12.140: 	base resolution:   1920x1080
+17:01:12.140: 	output resolution: 1920x1080
+17:01:12.140: 	downscale filter:  Bicubic
+17:01:12.140: 	fps:               30/1
+17:01:12.140: 	format:            NV12
+17:01:12.140: 	YUV mode:          Rec. 709/Partial
+17:01:12.141: NV12 texture support enabled
+17:01:12.141: P010 texture support not available
+17:01:12.141: Audio monitoring device:
+17:01:12.141: 	name: Default
+17:01:12.141: 	id: default
+17:01:12.141: ---------------------------------
+17:01:12.146: Failed to load 'en-US' text for module: 'decklink-captions.so'
+17:01:12.151: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+17:01:12.155: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+17:01:12.155: Failed to initialize module 'decklink.so'
+17:01:12.251: [pipewire] Available capture sources:
+17:01:12.251: [pipewire]     - Monitor source
+17:01:12.251: [pipewire]     - Window source
+17:01:12.298: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+17:01:12.570: VAAPI: API version 1.22
+17:01:12.625: FFmpeg VAAPI H264 encoding supported
+17:01:12.896: FFmpeg VAAPI AV1 encoding supported
+17:01:13.158: FFmpeg VAAPI HEVC encoding supported
+17:01:13.621: [obs-nvenc] NVENC version: 13.0 (compiled) / 13.0 (driver), CUDA driver version: 12.90, AV1 supported: false
+17:01:14.439: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: cannot open shared object file: No such file or directory
+17:01:14.439: 
+17:01:14.441: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: cannot open shared object file: No such file or directory
+17:01:14.441: 
+17:01:14.441: Module '/usr/lib/obs-plugins/obs-websocket.so' not loaded
+17:01:14.459: ---------------------------------
+17:01:14.459:   Loaded Modules:
+17:01:14.459:     text-freetype2.so
+17:01:14.459:     rtmp-services.so
+17:01:14.459:     obs-x264.so
+17:01:14.459:     obs-webrtc.so
+17:01:14.459:     obs-vst.so
+17:01:14.459:     obs-transitions.so
+17:01:14.459:     obs-qsv11.so
+17:01:14.459:     obs-outputs.so
+17:01:14.459:     obs-nvenc.so
+17:01:14.459:     obs-libfdk.so
+17:01:14.459:     obs-filters.so
+17:01:14.459:     obs-ffmpeg.so
+17:01:14.459:     linux-v4l2.so
+17:01:14.459:     linux-pulseaudio.so
+17:01:14.459:     linux-pipewire.so
+17:01:14.459:     linux-jack.so
+17:01:14.459:     linux-capture.so
+17:01:14.459:     linux-alsa.so
+17:01:14.459:     image-source.so
+17:01:14.459:     frontend-tools.so
+17:01:14.459:     decklink-output-ui.so
+17:01:14.459:     decklink-captions.so
+17:01:14.459: ---------------------------------
+17:01:14.459: ---------------------------------
+17:01:14.459: Available Encoders:
+17:01:14.459:   Video Encoders:
+17:01:14.459: 	- ffmpeg_svt_av1 (SVT-AV1)
+17:01:14.459: 	- ffmpeg_aom_av1 (AOM AV1)
+17:01:14.460: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+17:01:14.460: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+17:01:14.460: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+17:01:14.460: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+17:01:14.460: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+17:01:14.460: 	- obs_x264 (x264)
+17:01:14.460:   Audio Encoders:
+17:01:14.460: 	- ffmpeg_aac (FFmpeg AAC)
+17:01:14.460: 	- ffmpeg_opus (FFmpeg Opus)
+17:01:14.460: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+17:01:14.460: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+17:01:14.460: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+17:01:14.460: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+17:01:14.460: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+17:01:14.460: 	- libfdk_aac (libfdk AAC)
+17:01:14.460: ==== Startup complete ===============================================
+17:01:14.496: All scene data cleared
+17:01:14.496: ------------------------------------------------
+17:01:14.501: [obs-scripting]: Loaded lua script: obs-zoom-to-mouse.lua
+17:01:14.505: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.7) 15.0.0'
+17:01:14.505: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+17:01:14.505: pulse-input: Started recording from 'alsa_output.usb-0c76_USB_PnP_Audio_Device-00.analog-stereo.monitor' (default)
+17:01:14.505: [Loaded global audio device]: 'Desktop Audio'
+17:01:14.505: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.7) 15.0.0'
+17:01:14.506: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+17:01:14.506: pulse-input: Started recording from 'alsa_input.usb-0c76_USB_PnP_Audio_Device-00.mono-fallback' (default)
+17:01:14.506: [Loaded global audio device]: 'Mic/Aux'
+17:01:14.506:     - filter: 'Noise Suppression' (noise_suppress_filter_v2)
+17:01:14.508: PipeWire initialized
+17:01:14.513: Switched to scene 'Scene'
+17:01:14.513: ------------------------------------------------
+17:01:14.513: Loaded scenes:
+17:01:14.513: - scene 'Scene':
+17:01:14.513:     - source: 'Monitor' (pipewire-screen-capture-source)
+17:01:14.513:         - filter: 'obs-zoom-to-mouse-crop' (crop_filter)
+17:01:14.513: ------------------------------------------------
+17:01:14.544: [pipewire] Screencast session created
+17:01:15.071: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+17:01:15.071: 
+17:01:15.135: adding 42 milliseconds of audio buffering, total audio buffering is now 64 milliseconds (source: Mic/Aux)
+17:01:15.135: 
+17:01:15.534: [pipewire] Asking for monitor and window
+17:01:15.536: [pipewire] source selected, setting up screencast
+17:01:15.541: [pipewire] Server version: 1.4.7
+17:01:15.541: [pipewire] Library version: 1.4.7
+17:01:15.541: [pipewire] Header version: 1.4.6
+17:01:15.542: [pipewire] Created stream 0x55ffc01873c0
+17:01:15.542: [pipewire] Stream 0x55ffc01873c0 state: "connecting" (error: none)
+17:01:15.543: [pipewire] Playing stream 0x55ffc01873c0
+17:01:15.543: [pipewire] Stream 0x55ffc01873c0 state: "paused" (error: none)
+17:01:15.569: [pipewire] Negotiated format:
+17:01:15.569: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:01:15.569: [pipewire]     Modifier: 0x0
+17:01:15.569: [pipewire]     Size: 1920x1080
+17:01:15.569: [pipewire]     Framerate: 0/1
+17:01:15.569: [pipewire] Negotiated format:
+17:01:15.569: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:01:15.569: [pipewire]     Modifier: 0x300000000e08014
+17:01:15.569: [pipewire]     Size: 1920x1080
+17:01:15.569: [pipewire]     Framerate: 0/1
+17:01:15.570: [pipewire] Stream 0x55ffc01873c0 state: "streaming" (error: none)
+17:01:23.434: Get on org.freedesktop.portal.Settings returned an invalid reply
+17:01:23.434: Get on org.freedesktop.portal.Settings returned an invalid reply
+17:01:23.434: Get on org.freedesktop.portal.Settings returned an invalid reply

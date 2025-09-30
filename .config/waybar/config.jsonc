@@ -43,7 +43,7 @@
     "keyboard-name": "by-tech-gaming-keyboard"
   },
   "user": {
-    "format": "  abdlrhmn0x7e | ({work_H}hr {work_M} mins ↑)",
+    "format": "  abdlrhmn0x7e | ({work_d} days {work_H} hr ↑)",
     "interval": 60,
     "height": 23,
     "width": 23,

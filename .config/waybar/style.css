@@ -23,7 +23,7 @@
 }
 
 window#waybar {
-  background-color: alpha(@background, 0.8); /* base05 */
+  background-color: alpha(@background, 0); /* base05 */
   color: @blue;
   transition-property: background-color;
   transition-duration: 0.5s;

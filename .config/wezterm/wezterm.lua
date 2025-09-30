@@ -9,18 +9,18 @@ config.bidi_enabled = true
 -- config.bidi_direction = "LeftToRight"
 
 -- appearance
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 config.font = wezterm.font("GeistMono Nerd Font Mono", { weight = "Medium" })
 config.font_size = 16
-config.color_scheme = "carbonfox"
-config.colors = {
-	background = "black",
-}
+config.color_scheme = "GitHub Dark"
+-- config.colors = {
+-- 	background = "black",
+-- }
 
 config.window_padding = {
 	left = 0,
 	right = 0,
-	top = 0,
+	top = 9,
 	bottom = 0,
 }
 
