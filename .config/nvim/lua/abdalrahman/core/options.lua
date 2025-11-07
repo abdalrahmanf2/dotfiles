@@ -5,7 +5,7 @@ vim.g.maplocalleader = " "
 -- options
 local o = vim.opt
 
-o.guicursor = ""
+-- o.guicursor = ""
 
 -- auto read files when they change
 o.autoread = true

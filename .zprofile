@@ -1,7 +1,7 @@
-export PATH="/home/abdalrahman/.local/bin:/home/abdalrahman/.local/share/mise/installs/ruby/3.4.5/bin:$PATH"
-export EDITOR=nvim
+export PATH=/home/abdlrhmn0x7e/dotfiles/.local/bin:$PATH
 export BUN_INSTALL="$HOME/.bin"
 export PATH=$BUN_INSTALL/bin:$PATH
+export EDITOR=nvim
 export MANPAGER="nvim +Man!"
 
 export FZF_DEFAULT_OPTS=" \

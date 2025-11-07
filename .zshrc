@@ -76,7 +76,7 @@ alias venv-create='python3 -m venv .venv'
 alias venv-deactivate='deactivate'
 
 # Zed
-alias zed='env -u WAYLAND_DISPLAY zeditor'
+alias z='env -u WAYLAND_DISPLAY zeditor'
 
 # Shell integrations
 
@@ -90,44 +90,28 @@ export FZF_DEFAULT_OPTS=" \
 --color=border:#252525,label:#F2F4F8"
 
 # oh my posh
-# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.omp.json)"
 
 # starship
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+# eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
-export PATH=$PATH:/home/abdalrahman/.spicetify
+export PATH=$PATH:/home/abdlrhmn0x7e/.spicetify
 
 # bun completions
-[ -s "/home/abdalrahman/.bin/_bun" ] && source "/home/abdalrahman/.bin/_bun"
+# [ -s "/home/abdalrahman/.bin/_bun" ] && source "/home/abdalrahman/.bin/_bun"
 
 # envs
-export PATH="/home/abdalrahman/.local/bin:/home/abdalrahman/.local/share/gem/ruby/3.4.0/bin:$PATH"
-
-
+export PATH=/home/abdlrhmn0x7e/dotfiles/.local/bin:$PATH
 export EDITOR=nvim
 export BUN_INSTALL="$HOME/.bin"
 export PATH=$BUN_INSTALL/bin:$PATH
 export MANPAGER="nvim +Man!"
 
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-
 # pnpm
-export PNPM_HOME="/home/abdalrahman/.local/share/pnpm"
+export PNPM_HOME="/home/abdlrhmn0x7e/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-# Android sdk
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-export QT_QPA_PLATFORM=wayland
-export QT_QPA_PLATFORM_PLUGIN_PATH="/usr/share/licenses/qt5-wayland"
-export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1

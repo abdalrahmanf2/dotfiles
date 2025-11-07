@@ -17,8 +17,20 @@ return {
 					floats = "transparent",
 				},
 			})
+		end,
+	},
+	{
+		"ellisonleao/gruvbox.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			local gruvbox = require("gruvbox")
 
-			-- vim.cmd([[colorscheme tokyonight]])
+			gruvbox.setup({
+				transparent_mode = true,
+			})
+
+			vim.cmd([[colorscheme gruvbox]])
 		end,
 	},
 	{
@@ -33,7 +45,7 @@ return {
 				},
 			})
 
-			vim.cmd("colorscheme github_dark")
+			-- vim.cmd("colorscheme github_dark")
 		end,
 	},
 	{

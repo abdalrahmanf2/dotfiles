@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "green",
+          "style": "plain",
+          "template": "\u279c ",
+          "type": "session"
+        },
+        {
+          "foreground": "lightRed",
+          "properties": {
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "lightBlue",
+          "style": "powerline",
+          "template": "(\ue626{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}) ",
+          "type": "go"
+        },
+        {
+          "foreground": "lightMagenta",
+          "style": "powerline",
+          "template": "(\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}) ",
+          "type": "python"
+        },
+        {
+          "foreground": "red",
+          "properties": {
+            "branch_icon": ""
+          },
+          "style": "plain",
+          "template": "<blue>git(</>{{ .HEAD }}<blue>)</>",
+          "type": "git"
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "overflow": "hidden",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "red",
+          "template": "{{ .FormattedMs }}",
+          "properties": {
+            "threshold": 3000
+          }
+        }
+      ]
+    }
+  ],
+  "transient_prompt": {
+    "foreground": "green",
+    "style": "plain",
+    "template": "\u279c "
+  },
+  "final_space": true,
+  "version": 3
+}

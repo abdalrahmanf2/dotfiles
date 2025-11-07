@@ -1,7 +1,8 @@
 # Theme
-theme = tokyonight-storm
+# theme = "Vesper"
+theme = "Gruvbox Material Dark"
 cursor-invert-fg-bg = true
-background-opacity = 0.95
+background-opacity = 0.9
 window-theme = ghostty
 
 # Cursor
@@ -9,10 +10,11 @@ cursor-style = block
 cursor-style-blink = false
 
 # Fonts
-font-size = 14
+font-size = 16
 font-family = "JetBrainsMono Nerd Font"
 font-family = "Noto Sans"
 freetype-load-flags = hinting
+font-style = SemiBold
 
 # keybindings
 keybind = ctrl+shift+c=copy_to_clipboard
@@ -31,14 +33,9 @@ keybind = ctrl+shift+k=goto_split:top
 keybind = ctrl+shift+l=goto_split:right
 
 # Window
-gtk-single-instance = true
-gtk-tabs-location = bottom
-gtk-wide-tabs = false
-window-padding-x = 10
-window-padding-y = 12,0
+window-padding-y = 0,0
+window-padding-x = 4
 window-padding-balance = true
-window-padding-color = background
-window-decoration = false
 
 # Other
 shell-integration-features = no-cursor,no-sudo,no-title
