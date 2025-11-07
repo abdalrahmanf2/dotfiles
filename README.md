@@ -2,6 +2,10 @@
 
 Personal configuration files for my Arch Linux setup with niri, tmux, and a curated wallpaper collection.
 
+# Gallery
+
+![](https://github.com/abdlrhmn0x7e/dotfiles/blob/trunk/screenshots/image.png)
+
 ## 📂 Repository Structure
 
 ```
