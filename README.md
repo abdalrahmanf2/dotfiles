@@ -37,9 +37,8 @@ dotfiles/
 ### Applications & Tools
 
 - **Launcher/PowerMenu:** Modified Rofi Themes from [Adi1090x Rofi Themes](https://github.com/adi1090x/rofi)
-- **Bar:** [Polybar](https://github.com/polybar/polybar)
+- **Desktop Shell:** [Noctalia](https://docs.noctalia.dev/) - A sleek Quickshell config for Wayland (handles bar & wallpapers)
 - **LockScreen:** [Betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
-- **Wallpaper Daemon:** [feh](https://github.com/derf/feh)
 - **Spotify Theming:** Spicetify with Gruvbox Theme + Beautiful Lyrics Extension
 
 ## 🚀 Installation
@@ -97,15 +96,11 @@ This repository includes a collection of 100+ high-quality wallpapers in the `wa
 - Abstract art
 - Gruvbox themed wallpapers
 
-Feel free to use any of these wallpapers with your preferred wallpaper daemon. The current setup uses [feh](https://github.com/derf/feh).
+Feel free to use any of these wallpapers with your preferred wallpaper daemon. The current setup uses [Noctalia](https://docs.noctalia.dev/), which handles wallpaper management as part of its Quickshell configuration.
 
 ### Setting a Wallpaper
 
-With feh:
-
-```bash
-feh --bg-scale ~/dotfiles/wallpapers/your-favorite-wallpaper.png
-```
+Wallpapers are managed through Noctalia's configuration. Refer to the [Noctalia documentation](https://docs.noctalia.dev/) for details on configuring wallpapers.
 
 ## 📝 Notes
 
