@@ -1,0 +1,19 @@
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+mouse = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.insert]
+"C-c" = "normal_mode"
+
+[editor.lsp]
+enable = true

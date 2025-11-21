@@ -6,7 +6,7 @@
   <property name="pressureMultiplier" value="1.75"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="My Toolbar Copy"/>
-  <property name="lastSavePath" value="/home/abdalrahman/Downloads"/>
+  <property name="lastSavePath" value="/home/abdlrhmn0x7e/Downloads"/>
   <property name="lastOpenPath" value="/home/abdalrahman/notes"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
@@ -14,9 +14,9 @@
   <property name="zoomStep" value="10"/>
   <property name="zoomStepScroll" value="2"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="956"/>
-  <property name="mainWndHeight" value="1048"/>
-  <property name="maximized" value="true"/>
+  <property name="mainWndWidth" value="945"/>
+  <property name="mainWndHeight" value="1026"/>
+  <property name="maximized" value="false"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
   <property name="sidebarWidth" value="50"/>
@@ -290,7 +290,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ff0000"/>
+      <attribute name="color" type="hex" value="c0caf5"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
