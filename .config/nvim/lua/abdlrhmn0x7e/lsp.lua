@@ -64,4 +64,11 @@ vim.diagnostic.config({
       [severity.INFO] = " ",
     },
   },
+  virtual_text = true,
+  underline = true,
+  update_in_insert = false,
+  float = {
+    border = "rounded",
+    source = true,
+  },
 })

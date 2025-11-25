@@ -22,7 +22,7 @@ return {
         }
       end
 
-      vim.keymap.set("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "Nvim Tree Toggle" })
+      vim.keymap.set("n", "<leader>pv", "<cmd>NvimTreeToggle<CR>", { desc = "Nvim Tree Toggle" })
 
       require("nvim-tree").setup({
         view = {

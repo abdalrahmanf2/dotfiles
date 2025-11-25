@@ -19,7 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     { import = "abdlrhmn0x7e.plugins" },
-    { import = "abdlrhmn0x7e.plugins.lsp" },
   },
   checker = { enabled = true, notify = false },
   change_detection = { notify = false }
