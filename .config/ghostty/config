@@ -1,6 +1,6 @@
 # Theme
 # theme = "Vesper"
-theme = "Gruvbox Material Dark"
+theme = "Rose Pine"
 cursor-invert-fg-bg = true
 background-opacity = 0.9
 window-theme = ghostty

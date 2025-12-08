@@ -52,7 +52,7 @@ output "DP-1" {
 }
 
 layout {
-    gaps 6
+    gaps 0
 
     center-focused-column "never"
 
@@ -64,17 +64,18 @@ layout {
 
     default-column-width { proportion 0.5; }
 
-    focus-ring {
-        off
-        width 3 
-        active-color "#32302f"
-        inactive-color "#7c6f64"
-    }
+    // focus-ring {
+    //     off
+    //     width 3 
+    //     active-color "#32302f"
+    //     inactive-color "#7c6f64"
+    // }
+    //
 
     border {
-        width 3 
-        active-color "#32302f"
-        inactive-color "#32302f"
+        width 3
+        active-color "#26233a"
+        inactive-color "#21202e"
     }
 }
 
@@ -87,7 +88,7 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 animations {
     // Uncomment to turn off all animations.
-    // off
+    off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
@@ -150,9 +151,26 @@ layer-rule {
 }
 
 window-rule {
+  match is-floating=true
+
   // Rounded corners for a modern look.
   geometry-corner-radius 12
 
+  focus-ring {
+      off
+      width 3 
+      active-color "#32302f"
+      inactive-color "#7c6f64"
+  }
+
+  border {
+      width 3 
+      active-color "#32302f"
+      inactive-color "#32302f"
+  }
+}
+
+window-rule {
   // Clips window contents to the rounded corner boundaries.
   clip-to-geometry true
 }

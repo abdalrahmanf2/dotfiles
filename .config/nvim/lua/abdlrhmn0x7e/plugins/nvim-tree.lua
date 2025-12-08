@@ -12,8 +12,9 @@ return {
         local scr_h = vim.opt.lines:get()
         local tree_w = 80
         local tree_h = math.floor(tree_w * scr_h / scr_w)
+
         return {
-          border = "double",
+          border = "rounded",
           relative = "editor",
           width = tree_w,
           height = tree_h,

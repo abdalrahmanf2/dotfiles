@@ -16,6 +16,29 @@ return {
           opts = { skip = true },
         },
       },
+
+      popup = {
+        border = {
+          style = "none",
+          padding = { 2, 3 },
+        },
+        filter_options = {},
+        win_options = {
+          winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+        },
+      },
+
+      cmdline_popup = {
+        border = {
+          style = "none",
+          padding = { 2, 3 },
+        },
+        filter_options = {},
+        win_options = {
+          winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+        },
+      },
+
       cmdline = {
         view = "cmdline",
         format = {
@@ -37,7 +60,7 @@ return {
           silent = true,
           view = nil,
           opts = {
-            border = "rounded",
+            border = nil,
             position = { row = 2, col = 2 },
           },
         },
