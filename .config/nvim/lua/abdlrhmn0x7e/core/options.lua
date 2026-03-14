@@ -9,7 +9,7 @@ vim.g.loaded_netrwPlugin = 1
 -- options
 local o = vim.opt
 
-o.guicursor = ""
+-- o.guicursor = ""
 
 -- auto read files when they change
 o.autoread = true
@@ -55,7 +55,7 @@ o.showmode = false
 
 -- sync OS and Neovim clipboards
 vim.schedule(function()
-	o.clipboard = "unnamedplus"
+  o.clipboard = "unnamedplus"
 end)
 
 -- enable break indent

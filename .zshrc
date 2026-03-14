@@ -75,8 +75,12 @@ alias venv-activate='source .venv/bin/activate'
 alias venv-create='python3 -m venv .venv'
 alias venv-deactivate='deactivate'
 
-# Zed
-alias z='env -u WAYLAND_DISPLAY zeditor'
+# Editors
+alias z='zeditor'
+alias c='cursor'
+
+alias cc="claude --dangerously-skip-permissions"
+
 
 # Shell integrations
 

@@ -7,6 +7,14 @@ return {
       transparent_mode = true,
     },
   },
+  { "projekt0n/github-nvim-theme", name = "github-theme" },
+  { "datsfilipe/vesper.nvim", opts = { transparent = true } },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   {
     "rose-pine/neovim",
     name = "rose-pine",
@@ -35,6 +43,17 @@ return {
           TelescopePromptBorder = { fg = "surface", bg = "surface" },
         },
       })
+    end,
+  },
+  {
+    "navarasu/onedark.nvim",
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      require("onedark").setup({
+        style = "dark",
+        transparent = true,
+      })
+      require("onedark").load()
     end,
   },
 }

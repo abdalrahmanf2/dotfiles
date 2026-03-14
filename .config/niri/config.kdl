@@ -52,7 +52,7 @@ output "DP-1" {
 }
 
 layout {
-    gaps 0
+    gaps 4
 
     center-focused-column "never"
 
@@ -64,20 +64,17 @@ layout {
 
     default-column-width { proportion 0.5; }
 
-    // focus-ring {
-    //     off
-    //     width 3 
-    //     active-color "#32302f"
-    //     inactive-color "#7c6f64"
-    // }
-    //
+    focus-ring {
+      off
+    }
 
     border {
-        width 3
-        active-color "#26233a"
-        inactive-color "#21202e"
+        width 2
+        active-color "#32302f"
+        inactive-color "#32302f"
     }
 }
+
 
 
 hotkey-overlay {
@@ -88,10 +85,14 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 animations {
     // Uncomment to turn off all animations.
-    off
+    // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
+
+   workspace-switch {
+        spring damping-ratio=1.0 stiffness=1500 epsilon=0.0001
+    }
 }
 
 workspace "terminal"
@@ -146,28 +147,15 @@ window-rule {
 
 // Set the overview wallpaper on the backdrop.
 layer-rule {
-  match namespace="^quickshell-overview*"
+  match namespace="^noctalia-overview*"
   place-within-backdrop true
 }
 
 window-rule {
-  match is-floating=true
+  // match is-floating=true
 
   // Rounded corners for a modern look.
-  geometry-corner-radius 12
-
-  focus-ring {
-      off
-      width 3 
-      active-color "#32302f"
-      inactive-color "#7c6f64"
-  }
-
-  border {
-      width 3 
-      active-color "#32302f"
-      inactive-color "#32302f"
-  }
+  geometry-corner-radius 10
 }
 
 window-rule {
@@ -184,7 +172,7 @@ debug {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
     // Mod+Space hotkey-overlay-title="Run an Application: Rofi" { spawn-sh "rofi -show drun -theme ~/.config/rofi/gruvbox.rasi"; }
 
     Mod+Space repeat=false { spawn "vicinae" "toggle"; }
